@@ -841,12 +841,11 @@ header {
     animation: showvideo 3s linear;
 }
 
-/*.video-box video {
+.video-box video {
     display: block;
     width: 100%;
     height: auto;
-    animation: showvideo 4s linear;
-}*/
+}
 
 @keyframes showvideo {
     0% {
