@@ -822,10 +822,10 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-image: url(../img/site_bg.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: rgb(0, 0, 0);
 }
+
+
 
 .video-box {
     display: block;
@@ -835,14 +835,18 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+    background-image: url(../img/site_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    animation: showvideo 3s linear;
 }
 
-.video-box video {
+/*.video-box video {
     display: block;
     width: 100%;
     height: auto;
     animation: showvideo 4s linear;
-}
+}*/
 
 @keyframes showvideo {
     0% {
