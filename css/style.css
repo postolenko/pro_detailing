@@ -324,7 +324,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 5;
 }
 
 .header {
@@ -818,12 +818,9 @@ header {
 
 /*-- Main Page Section - 1 --*/
 
-.main-page-section {
+.promo-section {
     display: block;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: rgb(0, 0, 0);
 }
 
@@ -868,13 +865,13 @@ header {
     }
 }
 
-.main-page-section .row {
+.promo-section .row {
     display: table;
     width: 100%;
     min-height: 100vh;
 }
 
-.main-page-section .row:before {
+.promo-section .row:before {
     display: table-cell;
     vertical-align: middle;
     width: 1%;
@@ -932,11 +929,12 @@ footer {
     left: 0;
     display: block;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
 }
 
 .footer .row {
     border-top: 1px solid #424243;
+    /*border-top: 1px solid rgba(0, 0, 0, .2);*/
 }
 
 .footer .col {
