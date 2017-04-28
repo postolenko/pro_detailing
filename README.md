@@ -1,1 +1,1 @@
-# http://postolenko.github.io/pro_datailing/index.html
+# http://postolenko.github.io/pro_detailing/index.html
