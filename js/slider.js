@@ -2,12 +2,7 @@
 
 $(document).ready(function() {
 
-	// if($(".gallery-slider")) {
-
-		// var slide = $(this).children($(".slide"));
 		var countSlides = $(".gallery-slider .slide" ).length;
-
-		console.log(countSlides);
 
 		var minOffsetLeftVal = 0;
 		var minOpacityVal = .1;
@@ -34,7 +29,6 @@ $(document).ready(function() {
 
 		getStyleParameters();
 
-	// }
 
 	$(".gallery-pagination-content .count-slides").text(countSlides);
 
@@ -50,6 +44,39 @@ $(document).ready(function() {
 
 	});
 
+
+	$(function() {
+
+		var mouseDownCoor;
+		var mouseUpCoor;
+		var offsetMove;
+
+		$(".gallery-slider").bind({
+			mousedown: function(e) {
+				mouseDownCoor = e.screenX || e.pageX || e.clientX;
+			},
+			mouseup: function(e) {
+
+				mouseUpCoor = e.screenX || e.pageX || e.clientX;
+				offsetMove = mouseDownCoor - mouseUpCoor;
+
+				if(offsetMove <= -100 ) {					
+
+					prevSlide();
+
+				} else if( offsetMove >= 100 ) {
+
+					nextSlide();
+
+				}
+
+			}
+
+		});
+
+	 	
+
+	});
 
 	function nextSlide() {
 
@@ -75,9 +102,7 @@ $(document).ready(function() {
 
 			getSlideInfo();
 
-		}, 500);
-
-		
+		}, 500);		
 
 	}
 
@@ -140,6 +165,8 @@ $(document).ready(function() {
 		$(".gallery-pagination-content .current-slide").text(slideIndex);
 
 	}
+
+
 
 
 });
