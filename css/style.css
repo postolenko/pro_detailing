@@ -1004,13 +1004,41 @@ h1 .small {
     background: rgba(255, 255, 255, 1);
     z-index: 2;
     /*transform: rotateY(0deg);*/
+
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+/*.services-thumbnails .thumbnail.rotate_front .front {
+    transform: rotateY(90deg);
 }
 
 .services-thumbnails .thumbnail .back {
     background: rgba(51, 102, 255, 1);
-    /*display: none;*/
     transform: rotateY(90deg);
 }
+
+.services-thumbnails .thumbnail.rotate_front.rotate_back .back {
+    background: rgba(51, 102, 255, 1);
+    transform: rotateY(180deg);
+}*/
 
 .services-thumbnails .thumbnail .back p {
     color: #ffffff;
@@ -1021,15 +1049,20 @@ h1 .small {
 }*/
 
 .services-thumbnails .thumbnail .img-box {
-
+    display: block;
+    width: 100%;
+    height: 70px;
+    text-align: center;
 }
 
 .services-thumbnails .thumbnail .img-box img {
+    display: inline-block;
+    vertical-align: top;
 
 }
 
 .services-thumbnails .thumbnail p {
-    padding: 13px 0;
+    padding: 8px 0;
     font-family: "PT Serif", Arial, Verdana, sans-serif;
     font-size: 15px;
     line-height: 20px;
@@ -1991,22 +2024,196 @@ h1 .small {
     content: "\2f";
 }
 
-/*.gallery-pagination-content {
-
+.gallery-slide-photos {
+    /*display: block;*/
+    display: none;
+    width: 100%;
+    height: 100vh;
+    /*overflow: hidden;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
-.gallery-pagination-content .current-slide {
-
+.gallery-slide-photos-bg {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
 }
 
-.gallery-pagination-content .slash {
+.close-gallery-slide-btn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    overflow: hidden;
+    font-family: "Clear Sans", Arial, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: normal;
+    color: #ffffff;
+    border: 1px solid #000000;
+    background: rgba(255, 255, 255, .3);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
 
+    -webkit-transition-property: color, background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color, background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color, background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color, background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color, background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
 }
 
-.gallery-pagination-content .count-slides {
+.close-gallery-slide-btn:after {
+    content: "\2716";
+}
 
+.close-gallery-slide-btn:hover {
+    background: rgba(255, 255, 255, .2);
+}
+
+
+.slide-photos {
+    /*display: block;*/
+    display: none;
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    /*background: rgba(213, 213, 213, .9);*/
+    /*background: rgba(0, 0, 0, .8);*/
+    /*background: rgba(255, 255, 255, 1);*/
+}
+
+.photos-thumbnails {
+    width: 98%;
+    height: 80vh;
+    margin: auto;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+/*    overflow: hidden;
+    margin: 20px auto;*/
+    text-align: center;
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+}
+
+.photos-thumbnails .miniature {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 130px;
+    overflow: hidden;
+    margin: 10px;
+    /*outline: 1px solid red;*/
+
+    -webkit-box-shadow: 0px 1px 5px 4px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0px 1px 5px 4px rgba(0, 0, 0, .2);
+    box-shadow: 0px 1px 5px 4px rgba(0, 0, 0, .2);
+
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.photos-thumbnails .miniature:hover {
+    -webkit-box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, .4);
+    box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, .4);
+}
+
+/*.photos-thumbnails .miniature.on-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -105px;
 }*/
 
+.photos-thumbnails .miniature img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    border: none;
+
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: .7s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: .7s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: .7s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: .7s;
+    transition-timing-function: ease;
+}
+
+.photos-thumbnails .miniature:hover img {
+    transform: scale(1.05);
+}
+
+.fancybox-placeholder img {
+    min-width: 80wh;
+}
 
 /*-- /Main Page Section - 5 --*/
 

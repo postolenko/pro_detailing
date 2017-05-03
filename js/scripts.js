@@ -24,6 +24,7 @@ $(document).ready(function() {
 
     	// --------------------------------------------------------------
 
+
     });
 
     $(document).scroll( function() {
@@ -67,6 +68,31 @@ $(document).ready(function() {
     	$(".append-arrows .count-slides").text( $(".testimonial-slider .slide").length );
 
     });
+
+    // -----------------------------------------------
+
+
+ //    $(".services-thumbnails .thumbnail").bind({
+	// 	mouseenter: function() {
+
+	// 		$(this).addClass("rotate_front");
+	// 		$(this).delay(300).addClass("rotate_back");
+
+	// 	},
+	// 	mouseleave: function() {
+
+	// 		$(this).delay(300).removeClass("rotate_front");
+	// 		$(this).removeClass("rotate_back");
+
+	// 	}
+	// });
+
+
+    // $(function() {
+
+    // 	$(".slide-photos").css({ "height" : ( $(window).height() - 40 ) + "px" });
+
+    // });
 
 
  //    $(".services-thumbnails .thumbnail .front").bind({
