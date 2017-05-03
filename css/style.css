@@ -971,82 +971,36 @@ h1 .small {
     display: inline-block;
     vertical-align: top;
     width: 16.66%;
+    padding: 0 1%;
     min-height: 178px;
     position: relative;
-    /*outline: 1px solid red;*/
-    transform: rotateY(0deg);
-
-/*    transition-property: transform;
-    transition-duration: .7s;
-    transition-timing-function: ease;*/
 }
-
-/*.services-thumbnails .thumbnail:hover {
-    transform: rotateY(180deg);
-}*/
 
 .services-thumbnails .thumbnail .front,
 .services-thumbnails .thumbnail .back {
     display: block;
     width: 100%;
     height: 100%;
+    min-height: 178px;
     position: absolute;
     top: 0;
     left: 0;
     text-align: center;
-    padding: 35px 2% 20px 2%;
-/*    transition-property: transform;
-    transition-duration: .7s;
-    transition-timing-function: ease;*/
+    padding: 23px 2%;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
 }
 
 .services-thumbnails .thumbnail .front {
     background: rgba(255, 255, 255, 1);
     z-index: 2;
-    /*transform: rotateY(0deg);*/
-
-    -webkit-transition-property: transform;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: transform;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: transform;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: transform;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: transform;
-    transition-duration: .3s;
-    transition-timing-function: ease;
-}
-
-/*.services-thumbnails .thumbnail.rotate_front .front {
-    transform: rotateY(90deg);
 }
 
 .services-thumbnails .thumbnail .back {
     background: rgba(51, 102, 255, 1);
-    transform: rotateY(90deg);
 }
-
-.services-thumbnails .thumbnail.rotate_front.rotate_back .back {
-    background: rgba(51, 102, 255, 1);
-    transform: rotateY(180deg);
-}*/
-
-.services-thumbnails .thumbnail .back p {
-    color: #ffffff;
-}
-
-/*.services-thumbnails .thumbnail .inner {
-    position: relative;
-}*/
 
 .services-thumbnails .thumbnail .img-box {
     display: block;
@@ -1058,7 +1012,6 @@ h1 .small {
 .services-thumbnails .thumbnail .img-box img {
     display: inline-block;
     vertical-align: top;
-
 }
 
 .services-thumbnails .thumbnail p {
@@ -1070,55 +1023,138 @@ h1 .small {
     color: #656050;
 }
 
-/*.services-thumbnails .thumbnail:hover {
-    animation: rotate_thumb 3s;
-}*/
-
-/*@keyframes rotate_thumb {
-    0% {
-       background: rgba(255, 255, 255, 1);
-    }
-
-    50% {
-        background: rgba(51, 102, 255, 1);
-    }
-
-    100% {
-        background: rgba(51, 102, 255, 1);
-    }
-}*/
-
-/*.services-thumbnails .thumbnail.rotate .back {
-    animation: topposition 3s linear;
+.services-thumbnails .thumbnail .back p {
+    font-size: 18px;
+    color: #ffffff;
 }
 
-@keyframes topposition {
-    0% {
-        display: none;
-    }
-    50% {
-        display: block;
-    }
-    100% {
-        display: block;
-    }
-}*/
-
-/*.services-thumbnails .thumbnail:hover .back {
-    animation: topposition_front .7s linear;
+.service {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
 }
 
-@keyframes topposition_front {
-    0% {
-        z-index: 1;
-    }
-    50% {
-        z-index: 3;
-    }
-    100% {
-        z-index: 3;
-    }
+.service:hover {
+    position: relative;
+    z-index: 3;
+}
+
+.service:hover .inner,
+.service.hover .inner {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.service .inner {
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/*.service {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+
+    -webkit-transition-property: transform, opacity, box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform, opacity, box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform, opacity, box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform, opacity, box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform, opacity, box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
 }*/
+
+.service .inner:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 178px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .7s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .7s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .7s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity, box-shadow;
+    transition-duration: .7s;
+    transition-timing-function: ease;
+}
+
+.service:hover .inner:before {
+    opacity: 1;
+    -webkit-box-shadow: 0px 24px 30px 14px rgba(0, 0, 0, .17);
+    -moz-box-shadow: 0px 24px 30px 14px rgba(0, 0, 0, .17);
+    box-shadow: 0px 24px 30px 14px rgba(0, 0, 0, .17);
+}
+
+/*.service:hover {
+    -webkit-transform: scale(1.06);
+    -moz-transform: scale(1.06);
+    -o-transform: scale(1.06);
+    transform: scale(1.06);
+}*/
+
+.service .front,
+.service .back {
+    backface-visibility: hidden;
+}
+
+.service .front {
+    z-index: 2;
+}
+
+.service .back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.service:hover .inner,
+.service.hover .inner,
+.service.flip .flipper {
+    -webkit-transform: transform: rotateY(180deg);
+    -moz-transform: transform: rotateY(180deg);
+    -o-transform: transform: rotateY(180deg);
+    transform: transform: rotateY(180deg);
+}
 
 /*-- /Main Page Section - 2 --*/
 

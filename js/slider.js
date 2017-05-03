@@ -198,32 +198,5 @@ $(document).ready(function() {
 
 	}
 
-// document.addEventListener('touchstart', function(event) {
-// event.preventDefault();
-// event.stopPropagation();
-// /* Здесь ваш код обработки события*/
-// }, false);
-
-// document.addEventListener('touchmove', function(event) {
-// event.preventDefault();
-// event.stopPropagation();
-// /* Здесь ваш код обработки события*/
-// }, false);
-
-// document.addEventListener('touchend', function(event) {
-// event.preventDefault();
-// event.stopPropagation();
-// /* Здесь ваш код обработки события*/
-// }, false);
-
-// var obj = document.getElementsByClassName("gallery-slider")[0];
-
-// obj.addEventListener('touchstart', function(event) {
-// if (event.targetTouches.length == 1) {
-// var myclick=event.targetTouches[0]; /*Ваш код*/
-
-// }
-// }, false);
-
 
 });

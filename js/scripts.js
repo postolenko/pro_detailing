@@ -4,13 +4,6 @@ $(document).ready(function() {
 
     $(window).resize(function() {
 
-
-        // $(".wrapper").css({"min-height" : $(window).height() + "px"});
-
-        // $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
-
-        // --------------------------------------------------------------
-
         $("section").each(function() {
 
 	    	$(this).css({
@@ -32,15 +25,6 @@ $(document).ready(function() {
     	getTableHeaderPosition();
 
     });
-
-
-    // $(function() {
-
-    //     $(".wrapper").css({"min-height" : $(window).height() + "px"});
-
-    //     $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
-
-    // });
 
     $(function() {
 
@@ -72,20 +56,20 @@ $(document).ready(function() {
     // -----------------------------------------------
 
 
- //    $(".services-thumbnails .thumbnail").bind({
-	// 	mouseenter: function() {
+    $(".services-thumbnails .thumbnail").bind({
+		mouseenter: function() {
 
-	// 		$(this).addClass("rotate_front");
-	// 		$(this).delay(300).addClass("rotate_back");
+			$(this).addClass("rotate_front");
+			$(this).delay(300).addClass("rotate_back");
 
-	// 	},
-	// 	mouseleave: function() {
+		},
+		mouseleave: function() {
 
-	// 		$(this).delay(300).removeClass("rotate_front");
-	// 		$(this).removeClass("rotate_back");
+			$(this).delay(300).removeClass("rotate_front");
+			$(this).removeClass("rotate_back");
 
-	// 	}
-	// });
+		}
+	});
 
 
     // $(function() {
@@ -93,32 +77,6 @@ $(document).ready(function() {
     // 	$(".slide-photos").css({ "height" : ( $(window).height() - 40 ) + "px" });
 
     // });
-
-
- //    $(".services-thumbnails .thumbnail .front").bind({
-	// 	mouseenter: function() {
-	// 		$(this).css({"transform" : "rotateY("+ 90 + "deg)"}, 350);
-
-	// 		// $(this).children($(".back")).delay(350).animate({"transform" : "rotateY("+ 180 + "deg)"}, 350);
-	// 	},
-	// 	mouseleave: function() {
-	// 		$(this).css({"transform" : "rotateY("+ 0 + "deg)"}, 350);
-
-	// 		// $(this).children($(".back")).delay(350).animate({"transform" : "rotateY("+ 90 + "deg)"}, 350);
-	// 	}
-	// });
-
-	// $(".services-thumbnails .thumbnail").mouseenter(function() {
-	// 	$(this).css({"transform" : "rotateY("+ 90 + "deg)"}, 350);
-
-	// 	// $(this).children($(".back")).delay(350).animate({"transform" : "rotateY("+ 180 + "deg)"}, 350);
-	// });
-
-	// $(".services-thumbnails .thumbnail").mouseleave(function() {
-	// 	$(this).css({"transform" : "rotateY("+ 0 + "deg)"}, 350);
-
-	// 	// $(this).children($(".back")).delay(350).animate({"transform" : "rotateY("+ 180 + "deg)"}, 350);
-	// });
 
 
 	function getTableHeaderPosition() {
