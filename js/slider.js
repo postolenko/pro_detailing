@@ -37,8 +37,6 @@ $(document).ready(function() {
 		// getStyleParameters();
 
 
-	$(".gallery-pagination-content .count-slides").text(countSlides);
-
 	$(".gallery-arrow.next").click(function() {
 
 		controlsParent = $(this).parent($(".gallery-pagination"));
@@ -97,6 +95,56 @@ $(document).ready(function() {
 
 	// ------------------------------------
 
+	$(function() {
+
+		$(".gallery-slider").each(function() {
+
+			sliderName = $(this).attr("data-slider-name");
+
+			countSlides = $("[data-slider-name = '" + sliderName + "'] .slide" ).length;
+
+			$("[data-slider-name = '" + sliderName + "'] .gallery-pagination-content .count-slides").text(countSlides);
+
+			getStyleParameters(sliderName);
+
+		});
+
+	});
+
+	// ------------------------------------
+
+	// function nextSlide(sliderName) {
+
+	// 	var slideParent = $( "[data-slider-name = '" + sliderName + "']");
+
+	// 	$("[data-slider-name = '" + sliderName + "'] .slide:eq("+ 0 +")").animate({"opacity" : .01 }, 400);
+
+	// 	setTimeout(function() {
+
+	// 		$( "[data-slider-name = '" + sliderName + "'] .slide:eq("+ 0 +")").appendTo(slideParent);
+
+	// 	}, 400);
+
+	// 	setTimeout(function() {
+
+	// 		console.log(sliderName);
+
+	// 		getStyleParameters(sliderName);
+			
+	// 	}, 400);
+
+	// 	setTimeout(function() {
+
+	// 		$( "[data-slider-name = '" + sliderName + "'] .slide:eq("+ ( countSlides - 1 ) +")").animate({
+	// 			"opacity" : maxOpacityVal
+	// 		}, 400);
+
+	// 		getSlideInfo(sliderName);
+
+	// 	}, 500);
+
+	// }
+
 	function nextSlide(sliderName) {
 
 		var slideParent = $( "[data-slider-name = '" + sliderName + "'] .slide:eq("+ 0 +")").parent($(".gallery-slider"));
@@ -151,19 +199,9 @@ $(document).ready(function() {
 
 	}
 
-	$(function() {
-
-		$(".gallery-slider").each(function() {
-
-			sliderName = $(this).attr("data-slider-name");
-
-			getStyleParameters(sliderName);
-
-		});
-
-	});
-
 	function getStyleParameters(sliderName) {
+
+		countSlides = $("[data-slider-name = '" + sliderName + "'] .slide").length;
 
 		leftPosition = minOffsetLeftVal;
 		scaleVal = maxScaleVal;
