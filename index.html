@@ -98,7 +98,7 @@
 
 				<section class="promo-section">
 					<div class="video-box">
-					<!-- 	<video autoplay="autoplay" loop="loop" muted="muted">							
+						<!-- <video autoplay="autoplay" loop="loop" muted="muted">							
 							<source src="video/videoplayback.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 							<source src="video/videoplayback.webm" type='video/webm; codecs="vp8, vorbis"'>
 							<source src="video/videoplayback.ogv" type='video/ogg; codecs="theora, vorbis"'>
@@ -827,13 +827,29 @@
 
 				<!-- Main Page Section - 5-->
 
+				<section class="share-section">
+
+				<div class="share">
+					<div class="row">
+						<h2 class="top-h">Получи <span class="share-percent">10%</span> на весь</h2>
+						<h2 class="last-h">год от нас!</h2>						
+						<a href="#" class="blue-btn wow zoomIn">Получить скидку!</a>
+					</div>
+				</div>
+
+				</section>
+
+				<!-- /Main Page Section - 5-->
+
+				<!-- Main Page Section - 6-->
+
 				<section class="gallery-section">
 
 					<div class="row">
 
 						<h2>Галерея</h2>
 
-						<div class="gallery-slide-photos">
+						<div class="gallery-slide-photos" data-slider-name="gallery-slider_1">
 							
 							<div class="gallery-slide-photos-bg"></div>
 
@@ -1042,7 +1058,7 @@
 
 							<div class="left">
 
-								<div class="slide-info slide-info-append">									
+								<div class="slide-info slide-info-append"  data-slider-name="gallery-slider_1">					
 									<h3>Mercedes W222</h3>
 									<p>Комплексный детейлинг</p>
 									<p class="count-photo">14 фото</p>
@@ -1052,7 +1068,7 @@
 
 							<div class="right">
 
-								<div class="gallery-slider">
+								<div class="gallery-slider" data-slider-name="gallery-slider_1">
 									
 									<div class="slide" data-index="1">
 										<div class="img-box">
@@ -1107,7 +1123,7 @@
 
 							</div>
 
-							<div class="gallery-pagination">
+							<div class="gallery-pagination" data-slider-name="gallery-slider_1">
 								<button type="button" class="gallery-arrow prev"><span>&#10229;</span></button>
 								<div class="gallery-pagination-content">
 									<p class="current-slide"></p>
@@ -1123,7 +1139,42 @@
 
 				</section>
 
-				<!-- /Main Page Section - 5-->
+				<!-- /Main Page Section - 6-->
+
+				<!-- Main Page Section - 7-->
+
+				<section class="contacts-section">
+
+					<div class="row">
+						
+						<h2 class="top-index">Контакты</h2>
+
+						<div class="map-box">
+						
+							<div id="map"></div>
+
+						</div>
+
+						<div class="contacts-block">
+							
+							<a href="tel:+79661744202" class="tel-link">+7(966) 174-42-02</a>
+
+							<br />
+
+							<a href="mailto:info@detailing-pro.cc" class="mail-link">info@detailing-pro.cc</a>
+
+							<p>Понедельник-Суббота с 09:00 до 19:00 по адресу<br />
+							Москва: Волхонка 15(въезд с Пречистенской набережной)</p>
+
+							<a href="#" class="blue-btn wow zoomIn">Напишите нам</a>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<!-- /Main Page Section - 7-->
 
 			</div>
 		<!-- /Content -->
@@ -1149,6 +1200,8 @@
 
 		<script src="js/scripts.js"></script>
 		<script src="js/slider.js"></script>
+		<script src="js/map.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoGWEyUlxHOSfMgm2TliQLggP3mej7d_I&callback=initMap"></script>
 
 		<script type="text/javascript">
 

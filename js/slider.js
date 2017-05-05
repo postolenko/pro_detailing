@@ -27,20 +27,35 @@ $(document).ready(function() {
 
 		var indexSlide = 0;
 
-		getStyleParameters();
+		// ----------------------------------
+
+		var sliderName;
+		var controlsParent;
+
+		// ----------------------------------
+
+		// getStyleParameters();
 
 
 	$(".gallery-pagination-content .count-slides").text(countSlides);
 
 	$(".gallery-arrow.next").click(function() {
 
-		nextSlide();
+		controlsParent = $(this).parent($(".gallery-pagination"));
+
+		sliderName = controlsParent.attr("data-slider-name");
+
+		nextSlide(sliderName);
 
 	});
 
 	$(".gallery-arrow.prev").click(function() {
 
-		prevSlide();
+		controlsParent = $(this).parent($(".gallery-pagination"));
+
+		sliderName = controlsParent.attr("data-slider-name");
+
+		prevSlide(sliderName);
 
 	});
 
@@ -52,11 +67,17 @@ $(document).ready(function() {
 
 		$(".gallery-slider .slide").click(function() {
 
+			var slideParent = $(this).parent($(".gallery-slider"));
+
+			var sliderName = slideParent.attr("data-slider-name");
+
+			console.log(sliderName);
+
 			indexSlideAttr = $(this).attr("data-index");
 
-			$(".gallery-slide-photos").fadeIn(300);
+			$(".gallery-slide-photos[data-slider-name = '" + sliderName + "']").fadeIn(300);
 
-			$(".gallery-slide-photos .slide-photos[data-slide-index = '"+ indexSlideAttr +"']").fadeIn(300);
+			$(".gallery-slide-photos[data-slider-name = '" + sliderName + "'] .slide-photos[data-slide-index = '"+ indexSlideAttr +"']").fadeIn(300);
 
 		});
 
@@ -75,6 +96,110 @@ $(document).ready(function() {
 	});
 
 	// ------------------------------------
+
+	function nextSlide(sliderName) {
+
+		var slideParent = $( "[data-slider-name = '" + sliderName + "'] .slide:eq("+ 0 +")").parent($(".gallery-slider"));
+
+		$( "[data-slider-name = '" + sliderName + "'] .slide:eq("+ 0 +")").animate({"opacity" : .01 }, 400);		
+
+		setTimeout(function() {
+
+			$( "[data-slider-name = '" + sliderName + "'] .slide:eq("+ 0 +")").appendTo(slideParent);
+
+		}, 400);
+
+		setTimeout(function() {
+
+			getStyleParameters(sliderName);
+			
+		}, 400);
+
+		setTimeout(function() {
+
+			$( "[data-slider-name = '" + sliderName + "'] .slide:eq("+ ( countSlides - 1 ) +")").animate({
+				"opacity" : maxOpacityVal
+			}, 400);
+
+			getSlideInfo(sliderName);
+
+		}, 500);		
+
+	}
+
+	function prevSlide(sliderName) {
+
+		var slideParent = $( "[data-slider-name = '" + sliderName + "'] .slide:eq("+ 0 +")").parent($(".gallery-slider"));
+
+		$("[data-slider-name = '" + sliderName + "'] .slide:eq("+ ( countSlides - 1 ) +")").animate({"opacity" : .01 }, 400);		
+
+		setTimeout(function() {			
+
+			$("[data-slider-name = '" + sliderName + "'] .slide:eq("+ ( countSlides - 1 ) +")").prependTo(slideParent);
+
+		}, 400);
+
+		setTimeout(function() {
+
+			getStyleParameters(sliderName);
+
+			$("[data-slider-name = '" + sliderName + "'] .slide:eq("+ 0 +")").animate({"opacity" : 1}, 400);
+
+			getSlideInfo(sliderName);
+
+		}, 400);
+
+	}
+
+	$(function() {
+
+		$(".gallery-slider").each(function() {
+
+			sliderName = $(this).attr("data-slider-name");
+
+			getStyleParameters(sliderName);
+
+		});
+
+	});
+
+	function getStyleParameters(sliderName) {
+
+		leftPosition = minOffsetLeftVal;
+		scaleVal = maxScaleVal;
+		opacityVal = maxOpacityVal;
+		zIndexVal = countSlides;
+
+		for( indexSlide = 0; indexSlide <= countSlides - 1; indexSlide++) {
+
+			$("[data-slider-name = '" + sliderName + "'] .slide:eq("+ indexSlide +")").css({
+				"left" : leftPosition + "%",
+				"transform" : "scale("+ scaleVal + ")",
+				"z-index" : zIndexVal
+			});
+
+			$("[data-slider-name = '" + sliderName + "'] .slide:eq("+ indexSlide +") .img-box").css({
+				"opacity" : opacityVal
+			});		
+
+			leftPosition += stepLeft;
+			scaleVal -= stepScale;
+			opacityVal -= stepOpacity;
+			zIndexVal--;
+
+		}
+
+	}
+
+	function getSlideInfo(sliderName) {
+
+		var slideInfo = $("[data-slider-name = '" + sliderName + "'] .slide:eq("+ 0 +") .slide-info").html();
+		var slideIndex = $("[data-slider-name = '" + sliderName + "'] .slide:eq("+ 0 +")").attr("data-index");
+
+		$(".slide-info-append[data-slider-name = '" + sliderName + "']").html(slideInfo);
+		$("[data-slider-name = '" + sliderName + "'] .current-slide").text(slideIndex);
+
+	}
 
 
 	// $(function() {
@@ -109,94 +234,6 @@ $(document).ready(function() {
 	 	
 
 	// });
-
-	function nextSlide() {
-
-		$(".gallery-slider .slide:eq("+ 0 +")").animate({"opacity" : .01 }, 400);
-
-		setTimeout(function() {	
-
-			$(".gallery-slider .slide:eq("+ 0 +")").appendTo($(".gallery-slider"));
-
-		}, 400);
-
-		setTimeout(function() {
-
-			getStyleParameters();
-			
-		}, 400);
-
-		setTimeout(function() {
-
-			$(".gallery-slider .slide:eq("+ ( countSlides - 1 ) +")").animate({
-				"opacity" : maxOpacityVal
-			}, 400);
-
-			getSlideInfo();
-
-		}, 500);		
-
-	}
-
-	function prevSlide() {
-
-		$(".gallery-slider .slide:eq("+ ( countSlides - 1 ) +")").animate({"opacity" : .01 }, 400);
-
-		setTimeout(function() {			
-
-			$(".gallery-slider .slide:eq("+ ( countSlides - 1 ) +")").prependTo($(".gallery-slider"));
-
-		}, 400);
-
-		setTimeout(function() {
-
-			getStyleParameters();
-
-			$(".gallery-slider .slide:eq("+ 0 +")").animate({"opacity" : 1}, 400);
-
-			getSlideInfo();
-
-		}, 400);
-
-	}
-
-	function getStyleParameters() {
-
-		leftPosition = minOffsetLeftVal;
-		scaleVal = maxScaleVal;
-		opacityVal = maxOpacityVal;
-		zIndexVal = countSlides;
-
-		for( indexSlide = 0; indexSlide <= countSlides - 1; indexSlide++) {
-
-			$(".gallery-slider .slide:eq("+ indexSlide +")").css({
-				"left" : leftPosition + "%",
-				"transform" : "scale("+ scaleVal + ")",
-				"z-index" : zIndexVal
-			});
-
-			$(".gallery-slider .slide:eq("+ indexSlide +") .img-box").css({
-				"opacity" : opacityVal
-			});		
-
-			leftPosition += stepLeft;
-			scaleVal -= stepScale;
-			opacityVal -= stepOpacity;
-			zIndexVal--;
-
-		}
-
-	}
-
-	function getSlideInfo() {
-
-		var slideInfo = $(".gallery-slider .slide:eq("+ 0 +") .slide-info").html();
-		var slideIndex = $(".gallery-slider .slide:eq("+ 0 +")").attr("data-index");
-
-		$(".slide-info-append").html(slideInfo);
-		$(".gallery-pagination-content .current-slide").text(slideIndex);
-
-	}
 
 
 });
