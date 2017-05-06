@@ -6,6 +6,7 @@ $(document).ready(function() {
 
 	// ----------------------
 
+	var indexTableH;
 	var ornamentWidth;
 	var HCellWidth;
 
@@ -106,7 +107,7 @@ $(document).ready(function() {
 
     function getOrnamentHWidth() {
 
-    	for(var indexTableH = 0; indexTableH <= $(".ornament-h").length - 1; indexTableH++) {
+    	for( indexTableH = 0; indexTableH <= $(".ornament-h").length - 1; indexTableH++ ) {
 
     		HCellWidth = $(".ornament-h:eq("+ indexTableH +") .h-cell").width();
 
@@ -123,7 +124,17 @@ $(document).ready(function() {
 
     function getHeaderStyle() {
 
-    	if( $(".wrapper").hasClass("main-page") && $(window).scrollTop() >= $(".promo-section").height() ) {
+    	if( $(".content section").hasClass("promo-section") ) {
+
+    		topCoor = $(".promo-section").height();
+
+    	} else {
+
+    		topCoor = $(".header").height()
+
+    	}
+
+		if( $(window).scrollTop() >= topCoor ) {
 
     		$(".header").addClass("main-page-header");
 
