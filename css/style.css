@@ -317,7 +317,7 @@ a:active {
 }
 
 .left-quote-col {
-   top: 16%;
+   top: 17%;
    left: 0;
    padding: 0 1% 0 0;
 }
@@ -326,24 +326,6 @@ a:active {
    top: 57%;
    right: 0;
    padding: 0 0 0 1%;
-}
-
-.left-quote-col p {
-   font-family: "PT Serif", Arial, Verdana, sans-serif;
-   font-size: 22px;
-   line-height: 34px;
-   font-weight: normal;
-   font-style: italic;
-   color: #232325;
-}
-
-.right-quote-col p {
-   font-family: "Clear Sans", Arial, Verdana, sans-serif;
-   font-size: 15px;
-   line-height: 24px;
-   font-weight: normal;
-   font-style: italic;
-   color: #232325;
 }
 
 .blue-btn {
@@ -2723,6 +2705,24 @@ h2.top-index {
 /*-- /Main Page Section - 7 --*/
 
 /*-- Category Page Section - 1 --*/
+
+.left-quote-col p {
+   font-family: "PT Serif", Arial, Verdana, sans-serif;
+   font-size: 22px;
+   line-height: 34px;
+   font-weight: normal;
+   font-style: italic;
+   color: #232325;
+}
+
+.right-quote-col p {
+   font-family: "Clear Sans", Arial, Verdana, sans-serif;
+   font-size: 15px;
+   line-height: 24px;
+   font-weight: normal;
+   font-style: italic;
+   color: #232325;
+}
 
 .category-nav {
    text-align: center;
