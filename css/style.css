@@ -2725,7 +2725,8 @@ h2.top-index {
 }
 
 .category-nav {
-   text-align: center;
+    text-align: center;
+    padding: 5px 0 41px 0;
 }
 
 .category-nav li {
