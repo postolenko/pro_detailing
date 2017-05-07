@@ -175,6 +175,7 @@ textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s e
 section {
     position: relative;
     padding: 90px 0 45px 0;
+    background: rgba(255, 255, 255, 1);
 }
 
 h1 {
@@ -1243,6 +1244,10 @@ h1 .small {
 
 /*-- Main Page Section - 2 --*/
 
+.services-section {
+   background: rgba(255, 255, 255, 1);
+}
+
 .services-thumbnails {
     padding: 17px 0;
 }
@@ -1281,6 +1286,10 @@ h1 .small {
     z-index: 2;
 }
 
+.services-thumbnails .thumbnail .front p {
+   background: rgba(255, 255, 255, 1);
+}
+
 .services-thumbnails .thumbnail .back {
     background: rgba(51, 102, 255, 1);
 }
@@ -1291,6 +1300,10 @@ h1 .small {
     height: 70px;
     text-align: center;
 }
+
+/*.services-thumbnails .thumbnail .front .img-box {
+   background: rgba(255, 255, 255, 1);
+}*/
 
 .services-thumbnails .thumbnail .img-box img {
     display: inline-block;
@@ -1407,6 +1420,10 @@ h1 .small {
 /*-- /Main Page Section - 2 --*/
 
 /*-- Main Page Section - 3 --*/
+
+.price-section {
+   background: rgba(255, 255, 255, 1);
+}
 
 .tables-box {
     margin: 0 0 30px 0;
