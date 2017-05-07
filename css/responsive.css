@@ -18,6 +18,14 @@
 
 @media only screen and (max-width: 1024px) {
 
+	.header.main-page-header .main-nav .left {
+	    margin: 0 0 0 -3px;
+	}
+
+	.header.main-page-header .main-nav .right {
+	    margin: 0 -3px 0 0;
+	}
+
 	.main-nav ul li {
 		padding: 4px 6px;
 	}
