@@ -820,8 +820,9 @@ header {
 }
 
 .main-nav .right {
-    padding: 17px 0 17px 76px;
-    text-align: right;
+   margin: 0 -8px 0 0;
+   padding: 17px 0 17px 76px;
+   text-align: right;
 }
 
 .main-nav .left,
@@ -995,9 +996,6 @@ header {
 
 .respmenubtn-box {
    display: none;
-   /*width: 48%;
-   height: 58px;
-   padding: 12px 0 0 108px;*/
    width: 50%;
    height: 58px;
    padding: 12px 50px 0 0;
