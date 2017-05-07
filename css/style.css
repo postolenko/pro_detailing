@@ -175,7 +175,6 @@ textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s e
 section {
     position: relative;
     padding: 90px 0 45px 0;
-    background: rgba(255, 255, 255, 1);
 }
 
 h1 {
@@ -1352,6 +1351,7 @@ h1 .small {
     -moz-transition: .6s;
     -o-transition: .6s;
     transition: .6s;
+    background: rgba(255, 255, 255, 1);
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
