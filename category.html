@@ -6,7 +6,7 @@
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
@@ -21,6 +21,7 @@
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.fancybox.js"></script>
 	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
@@ -34,60 +35,71 @@
 
 		<!-- Header -->
 
-		<header>
+	<header>
 
-			<div class="header">
-					
-				<div class="top-row">
-					<div class="row offset-ziro">
-						<div class="col col-1">
-							<ul class="social-list">
-								<li><a href="#" class="mdi mdi-facebook"></a></li>
-								<li><a href="#" class="mdi mdi-vk"></a></li>
-								<li><a href="#" class="mdi mdi-twitter"></a></li>
-								<li><a href="#" class="mdi mdi-google-plus"></a></li>
-								<li><a href="#" class="youtube-icon"></a></li>
-								<li><a href="#" class="mdi mdi-instagram"></a></li>
-							</ul>
-						</div>
-						<div class="col col-2">
-							<a class="tel-link" href="tel:89661744202">8 966 174 42 02</a>
-							<a class="callback" href="#">Перезвонить?</a>
-						</div>
+		<div class="header">
+				
+			<div class="top-row">
+				<div class="row offset-ziro">
+					<div class="col col-1">
+						<ul class="social-list">
+							<li><a href="#" class="mdi mdi-facebook"></a></li>
+							<li><a href="#" class="mdi mdi-vk"></a></li>
+							<li><a href="#" class="mdi mdi-twitter"></a></li>
+							<li><a href="#" class="mdi mdi-google-plus"></a></li>
+							<li><a href="#" class="youtube-icon"></a></li>
+							<li><a href="#" class="mdi mdi-instagram"></a></li>
+						</ul>
+					</div>
+
+					<div class="respmenubtn-box">								
+						<button class="respmenubtn">							
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+
+					<div class="col col-2">
+						<ul class="contacts-list">
+							<li><a class="tel-link" href="tel:89661744202">8 966 174 42 02</a></li>
+							<li><a class="callback" href="#">Перезвонить?</a></li>
+						</ul>
 					</div>
 				</div>
-
-				<div class="logo-block wow zoomIn">
-					<a class="logo" href="#">
-						<img src="img/logo.png" alt="">
-					</a>
-				</div>
-
-				<div class="main-nav">
-					<div class="row clearfix">
-						<div class="col left">
-							<ul>						
-								<li><a href="#">Услуги</a></li>
-								<li><a href="#">Цены</a></li>
-								<li><a href="#">Отзывы</a></li>
-								<li><a href="#">Акции</a></li>
-								<li><a href="#">Галереи</a></li>
-							</ul>
-						</div>
-						<div class="col right">
-							<ul>							
-								<li><a href="#">О компании</a></li>
-								<li><a href="#">Партнеры</a></li>
-								<li><a href="#">Франшиза</a></li>
-								<li><a href="#">Контакты</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
 			</div>
 
-		</header>
+			<div class="logo-block wow zoomIn">
+				<a class="logo" href="#">
+					<img src="img/logo.png" alt="">
+				</a>
+			</div>
+
+			<div class="main-nav scroll">
+				<div class="row clearfix">
+					<div class="col left">
+						<ul>						
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Цены</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Галереи</a></li>
+						</ul>
+					</div>
+					<div class="col right">
+						<ul>							
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Партнеры</a></li>
+							<li><a href="#">Франшиза</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</header>
 
 		<!-- /Header -->
 
@@ -102,7 +114,7 @@
 
 						<div class="quote-col left-quote-col">
 							<div class="quote">
-								<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+								<p>Служба Яндекс. Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
 							</div>
 						</div>
 
@@ -151,88 +163,96 @@
 
 								<h2 class="ornament-h"><span class="h-cell">Цены</span></h2>
 
-								<div class="table table-header">
-									<div class="cell cell-1">
-										<h3>Наименование</h3>
-									</div>
-									<div class="cell cell-2">
-										<i class="icon icon-1"></i>
-									</div>
-									<div class="cell cell-3">
-										<i class="icon icon-2"></i>
-									</div>
-									<div class="cell cell-4">
-										<i class="icon icon-3"></i>
-									</div>
-									<div class="cell cell-5">
-										<i class="icon icon-4"></i>
-									</div>
-									<div class="cell cell-6">
-										<i class="icon icon-5"></i>
-									</div>
-								</div>
+								<div class="scroll-horizontal">
 
-								<div class="table">
-									<div class="cell cell-1">
-										<p>Полировка кузова руками</p>
-									</div>
-									<div class="cell cell-2">
-										<p>500 р.</p>
-									</div>
-									<div class="cell cell-3">
-										<p>25 000 р.</p>
-									</div>
-									<div class="cell cell-4">
-										<p>25 000 р.</p>
-									</div>
-									<div class="cell cell-5">
-										<p>20 р.</p>
-									</div>
-									<div class="cell cell-6">
-										<p>300 р.</p>
-									</div>
-								</div>
+									<div class="scroll-track">
 
-								<div class="table">
-									<div class="cell cell-1">
-										<p>Полировка кузова руками</p>
-									</div>
-									<div class="cell cell-2">
-										<p>500 р.</p>
-									</div>
-									<div class="cell cell-3">
-										<p>25 000 р.</p>
-									</div>
-									<div class="cell cell-4">
-										<p>25 000 р.</p>
-									</div>
-									<div class="cell cell-5">
-										<p>20 р.</p>
-									</div>
-									<div class="cell cell-6">
-										<p>300 р.</p>
-									</div>
-								</div>
+										<div class="table table-header">
+											<div class="cell cell-1">
+												<h3>Наименование</h3>
+											</div>
+											<div class="cell cell-2">
+												<i class="icon icon-1"></i>
+											</div>
+											<div class="cell cell-3">
+												<i class="icon icon-2"></i>
+											</div>
+											<div class="cell cell-4">
+												<i class="icon icon-3"></i>
+											</div>
+											<div class="cell cell-5">
+												<i class="icon icon-4"></i>
+											</div>
+											<div class="cell cell-6">
+												<i class="icon icon-5"></i>
+											</div>
+										</div>
 
-								<div class="table">
-									<div class="cell cell-1">
-										<p>Полировка кузова руками</p>
+										<div class="table">
+											<div class="cell cell-1">
+												<p>Полировка кузова руками</p>
+											</div>
+											<div class="cell cell-2">
+												<p>500 р.</p>
+											</div>
+											<div class="cell cell-3">
+												<p>25 000 р.</p>
+											</div>
+											<div class="cell cell-4">
+												<p>25 000 р.</p>
+											</div>
+											<div class="cell cell-5">
+												<p>20 р.</p>
+											</div>
+											<div class="cell cell-6">
+												<p>300 р.</p>
+											</div>
+										</div>
+
+										<div class="table">
+											<div class="cell cell-1">
+												<p>Полировка кузова руками</p>
+											</div>
+											<div class="cell cell-2">
+												<p>500 р.</p>
+											</div>
+											<div class="cell cell-3">
+												<p>25 000 р.</p>
+											</div>
+											<div class="cell cell-4">
+												<p>25 000 р.</p>
+											</div>
+											<div class="cell cell-5">
+												<p>20 р.</p>
+											</div>
+											<div class="cell cell-6">
+												<p>300 р.</p>
+											</div>
+										</div>
+
+										<div class="table">
+											<div class="cell cell-1">
+												<p>Полировка кузова руками</p>
+											</div>
+											<div class="cell cell-2">
+												<p>500 р.</p>
+											</div>
+											<div class="cell cell-3">
+												<p>25 000 р.</p>
+											</div>
+											<div class="cell cell-4">
+												<p>25 000 р.</p>
+											</div>
+											<div class="cell cell-5">
+												<p>20 р.</p>
+											</div>
+											<div class="cell cell-6">
+												<p>300 р.</p>
+											</div>
+										</div>
+
 									</div>
-									<div class="cell cell-2">
-										<p>500 р.</p>
-									</div>
-									<div class="cell cell-3">
-										<p>25 000 р.</p>
-									</div>
-									<div class="cell cell-4">
-										<p>25 000 р.</p>
-									</div>
-									<div class="cell cell-5">
-										<p>20 р.</p>
-									</div>
-									<div class="cell cell-6">
-										<p>300 р.</p>
-									</div>
+
 								</div>
 
 								<button type="button" class="blue-btn width-100">Заказать полировку!</button>
@@ -262,7 +282,17 @@
 		<footer>
 			
 			<div class="footer">
-				<div class="row offset-ziro">		
+				<div class="row offset-ziro">
+					<div class="col social-col">
+						<ul class="social-list">
+							<li><a href="#" class="mdi mdi-facebook"></a></li>
+							<li><a href="#" class="mdi mdi-vk"></a></li>
+							<li><a href="#" class="mdi mdi-twitter"></a></li>
+							<li><a href="#" class="mdi mdi-google-plus"></a></li>
+							<li><a href="#" class="youtube-icon"></a></li>
+							<li><a href="#" class="mdi mdi-instagram"></a></li>
+						</ul>
+					</div>
 					<div class="col col-1">
 						<p class="copyright">&copy; 2011–2017 «Детейлинг-про»</p>
 					</div>
@@ -288,6 +318,10 @@
 				$(window).on("load",function(){
 
 					$(".scroll").mCustomScrollbar();
+
+					$(".scroll-horizontal").mCustomScrollbar({
+						axis: "x"
+					});
 
 				});
 
