@@ -2526,7 +2526,7 @@ h1 .small {
     font-weight: normal;
     color: #ffffff;
     border: 1px solid #000000;
-    background: rgba(255, 255, 255, .3);
+    background: rgba(0, 0, 0, .2);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
@@ -2558,7 +2558,7 @@ h1 .small {
 }
 
 .close-gallery-slide-btn:hover {
-    background: rgba(255, 255, 255, .2);
+    background: rgba(0, 0, 0, .4);
 }
 
 
