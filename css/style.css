@@ -816,7 +816,8 @@ header {
 }
 
 .main-nav .left {
-    padding: 17px 76px 17px 0;
+   margin: 0 0 0 -8px;
+   padding: 17px 76px 17px 0;
 }
 
 .main-nav .right {
