@@ -229,11 +229,13 @@
 
 	.table p {
 	    padding: 3px 0;
+		font-size: 12px;
+		line-height: 15px;
 	}
 
 	.table .cell-1 p {
-	    font-size: 15px;
-	    line-height: 17px;
+	    font-size: 14px;
+	    line-height: 15px;
 	}
 
 	/*----------------------*/
