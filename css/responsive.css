@@ -176,7 +176,6 @@
 	/*-- Responsive Menu --*/
 
 	.main-nav {
-		/*display: block;*/
 		display: none;
 		overflow: hidden;
 		width: 100% !important;
@@ -498,6 +497,7 @@
 	}
 
 	.header .main-nav {
+		display: block !important;
 		height: auto !important;
 	}
 
