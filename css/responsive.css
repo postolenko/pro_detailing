@@ -38,6 +38,10 @@
 	    width: 26%;
 	}
 
+	.table .cell-2 {
+	    padding-left: 2% !important;
+	}
+
 	.table .cell-3 {
 	    width: 9%;
 	}
