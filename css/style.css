@@ -1283,9 +1283,9 @@ h1 .small {
 }
 
 .services-thumbnails .thumbnail .front {
-   background: rgba(255, 255, 255, 1);
-   /*z-index: 2;*/
-   border: 1px solid #ffffff;
+   /*background: rgba(255, 255, 255, 1);*/
+   z-index: 2;
+   /*border: 1px solid #ffffff;*/
 }
 
 /*.services-thumbnails .thumbnail .front p {
@@ -1294,7 +1294,7 @@ h1 .small {
 
 .services-thumbnails .thumbnail .back {
    background: rgba(51, 102, 255, 1);
-   border: 1px solid #3366ff;
+   /*border: 1px solid #3366ff;*/
 }
 
 .services-thumbnails .thumbnail .img-box {
@@ -1338,8 +1338,9 @@ h1 .small {
     z-index: 2 !important;
 }
 
-.service:hover .inner,
-.service.hover .inner {
+/*.service:hover .inner*/
+/*.service.hover .inner*/ 
+.service:hover .inner {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
@@ -1368,19 +1369,19 @@ h1 .small {
     top: 0;
     left: 0;
 
-    -webkit-transition-property: box-shadow;
+    -webkit-transition-property: opacity, box-shadow;
     -webkit-transition-duration: .7s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: box-shadow;
+    -moz-transition-property: opacity, box-shadow;
     -moz-transition-duration: .7s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: box-shadow;
+    -ms-transition-property: opacity, box-shadow;
     -ms-transition-duration: .7s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: box-shadow;
+    -o-transition-property: opacity, box-shadow;
     -o-transition-duration: .7s;
     -o-transition-timing-function: ease;
 
@@ -1412,9 +1413,7 @@ h1 .small {
     transform: rotateY(180deg);
 }
 
-.service:hover .inner,
-.service.hover .inner,
-.service.flip .flipper {
+.service:hover .inner {
     -webkit-transform: transform: rotateY(180deg);
     -moz-transform: transform: rotateY(180deg);
     -o-transform: transform: rotateY(180deg);

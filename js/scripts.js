@@ -117,6 +117,12 @@ $(document).ready(function() {
 
 	// ------------------------------------
 
+	// $(".thumbnail.service").ontouchstart(function() {
+	// 	this.classList.toggle('hover');
+	// }
+
+	// ------------------------------------
+
 	$(function() {
 
 		$(".resp-btn-box").click(function() {
