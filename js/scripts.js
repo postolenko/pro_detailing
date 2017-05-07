@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+	var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+    // -----------------------------------------------
+
 	var topCoorTableHeader;
 	var coorTop;
 	var coorBottom;
@@ -54,7 +62,13 @@ $(document).ready(function() {
 
     	// --------------------------------------------------------------
 
+    	bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+    	// --------------------------------------------------------------
+
     	getOrnamentHWidth();
+
+    	getRespMainNavHeight();
 
 
     });
@@ -95,13 +109,53 @@ $(document).ready(function() {
 
 			$(this).append("<span class='right-ornament'></span>");
 
-			// getOrnamentHWidth();
-
 	    });
 
 	    getOrnamentHWidth();
 
 	});
+
+	// ------------------------------------
+
+	$(function() {
+
+		$(".respmenubtn").click(function() {
+
+			if( $(".main-nav").is(":hidden") ) {
+
+				$(".main-nav").fadeIn(500);
+
+				$(this).addClass("active");
+
+				getRespMainNavHeight();
+
+			} else {
+
+				$(".main-nav").fadeOut(500);
+
+				$(this).removeClass("active");
+
+			}
+
+		});
+
+		$(this).keydown(function(eventObject){
+	        if (eventObject.which == 27) {
+	            
+	            $(".main-nav").fadeOut(500);
+	            $(".respmenubtn").removeClass("active");
+
+	         }
+        });
+
+	});
+
+	function getRespMainNavHeight() {
+		$(".main-nav").css({
+			"height" : $(window).height() - $(".header").height() + "px",
+			"top" : $(".header").height() + "px"
+		});
+	}
 
     // ------------------------------------
 
@@ -150,7 +204,7 @@ $(document).ready(function() {
 
 	function getTableHeaderPosition() {
 
-		if( $(".tables-box").length > 0) {
+		if( $(".tables-box").length > 0 && bodyWidth > 1024) {
 
 			topCoorTableHeader = $(window).scrollTop() + $(".header").height();
 

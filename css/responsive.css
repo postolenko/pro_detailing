@@ -1,3 +1,11 @@
+@media only screen and (max-width: 1400px) {
+
+	.row {
+		padding: 0 1%;
+	}
+
+}
+
 @media only screen and (max-width: 1280px) {
 
 
@@ -7,20 +15,393 @@
 
 @media only screen and (max-width: 1024px) {
 
+	.services-thumbnails .thumbnail {
+	    width: 20%;
+	}
+
+	/*------------*/
+
+
+	.table-header-box {
+		width: 900px;
+	}
+
+	.tables .scroll-horizontal .row {
+		width: 900px;
+	}
+
+	.table-header-box.resp {
+	   display: block;
+	}
+
+	.table .cell-1 {
+	    width: 26%;
+	}
+
+	.table .cell-3 {
+	    width: 9%;
+	}
+
+	.table .cell-4 {
+	    width: 8%;
+	}
+
+	.table .cell-5 {
+	    width: 10%;
+	}
+
+	.table .cell-6 {
+	    width: 9%;
+	}
+
+	.table .cell-7 {
+	    width: 9%;
+	}
+
+	.table .cell-8 {
+	    width: 11%;
+	}
 
 }
 
 
-@media only screen and (max-width: 737px) {
+@media only screen and (max-width: 768px) {
+
+	section {
+	    padding: 45px 0 20px 0;
+	}
+
+	h1 {
+	    font-size: 84px;
+	    line-height: 114px;
+	}
+
+	h2 {
+	    font-size: 37px;
+	    line-height: 44px;
+	    padding: 5px 0;
+	}
+
+	.center-block h2 {
+	    font-size: 27px;
+	    line-height: 25px;
+	}
 
 
+	/*-------------*/
+
+	.header {
+		z-index: 9;
+	}
+
+	.header .top-row {
+		min-height: 59px;
+		padding: 2px 2% !important;
+	}
+
+	.header .top-row .col-1 {
+		display: none;
+	}
+
+	.respmenubtn-box {
+	    display: inline-block;
+	    vertical-align: middle;
+	}
+
+	.header .top-row .col-2 {
+	    width: 52%;
+	    padding: 3px 0 3px 1%;
+	    text-align: right;
+	}
+
+	.logo-block {
+	    width: 80px !important;
+	    top: 4px !important;
+	    left: 2% !important;
+	    margin: 0 !important;
+	}
+
+	.tel-link {
+	    font-size: 20px;
+	    line-height: 20px;
+	}
+
+	/*-- Responsive Menu --*/
+
+	.main-nav {
+		/*display: block;*/
+		display: none;
+		overflow: hidden;
+		width: 100% !important;
+		background: rgba(0, 0, 0, .9);
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 7;
+		padding: 20px 0;
+	}
+
+	.header.main-page-header .main-nav .left,
+	.header.main-page-header .main-nav .right {
+	    padding: 0;
+	}
+
+	.main-nav .col.left,
+	.main-nav .col.right {
+		width: 100% !important;
+		float: none;
+		padding: 0;
+	}
+
+	.main-nav .left ul,
+	.main-nav .right ul {
+		margin: 0;
+	}
+
+	.main-nav ul li {
+		display: block;
+		text-align: center;
+		padding: 0;
+	}
+
+	.main-nav ul li a {
+		display: block;
+		padding: 13px 1%;
+		font-size: 19px;
+		line-height: 19px;
+		color: #ffffff !important;
+		text-transform: uppercase;
+		margin: 0;
+	
+	    -webkit-transition-property: color, background;
+	    -webkit-transition-duration: .3s;
+	    -webkit-transition-timing-function: ease;
+
+	    -moz-transition-property: color, background;
+	    -moz-transition-duration: .3s;
+	    -moz-transition-timing-function: ease;
+
+	    -ms-transition-property: color, background;
+	    -ms-transition-duration: .3s;
+	    -ms-transition-timing-function: ease;
+
+	    -o-transition-property: color, background;
+	    -o-transition-duration: .3s;
+	    -o-transition-timing-function: ease;
+
+	    transition-property: color, background;
+	    transition-duration: .3s;
+	    transition-timing-function: ease;
+	}
+
+	.main-nav ul li a:link,
+	.main-nav ul li a:visted,
+	.header.main-page-header .main-nav ul li a:link,
+	.header.main-page-header .main-nav ul li a:visted {
+	    color: #ffffff !important;
+	    background: rgba(0, 0, 0, 0);
+	}
+
+	.main-nav ul li a.active,
+	.header.main-page-header .main-nav ul li a.active {
+	    color: #f5de89 !important;
+	    background: rgba(0, 0, 0, 1);
+	}
+
+	.main-nav ul li a:active,
+	.main-nav ul li a:hover,
+	.header.main-page-header .main-nav ul li a:active,
+	.header.main-page-header .main-nav ul li a:hover {
+	    color: #f5de89 !important;
+	    background: rgba(0, 0, 0, 1);
+	}
+
+	/*-- /Responsive Menu --*/
+
+	.services-thumbnails .thumbnail {
+		width: 25%;
+	}
+
+	/*----------------------*/
+	.table .cell {
+	    padding: 4px 0;
+	}
+
+	.table .cell {
+	    padding: 3px 0;
+	}
+
+	.table p {
+	    padding: 3px 0;
+	}
+
+	.table .cell-1 p {
+	    font-size: 15px;
+	    line-height: 17px;
+	}
+
+	/*----------------------*/
+
+	.testimonial-slider .slide .col {
+	    width: 100%;
+	    padding: 0 3%;
+	}
+
+	.testimonial-slider .slide .col-2 {
+	    display: none;
+	}
+
+	.autograph {
+	    top: 2px;
+	    left: 0%;
+	}
+
+	.append-arrows {
+	    padding: 0 0 0 3%;
+	}
+
+	/*-----------------------*/
+
+	.share-section {
+	    height: auto;
+	}
+
+	.share-percent {
+	    font-size: 39px;
+	    line-height: 44px;
+	}
+
+	.share .last-h {
+	    margin: 150px 0 10px 0;
+	}
+
+	/*------------------------*/
+
+	.gallery .left,
+	.gallery .right {
+	    width: 100%;
+	    float: none;
+	}
+
+	.gallery-pagination {
+	    position: relative;
+	    bottom: 0;
+	    text-align: center;
+	}
 
 }
 
+@media only screen and (max-width: 600px) {
+
+	.services-thumbnails .thumbnail {
+	    width: 33.33%;
+	}
+
+	/*------------------------------*/
+
+	.contacts-section .row {
+	    min-height: 600px;
+	}
+
+	.contacts-section .map-box {
+	    top: -160px;
+	}
+
+	.contacts-block {
+	    padding: 200px 0 0 0;
+	}
+
+	.contacts-block .tel-link {
+	    font-size: 31px;
+	    line-height: 32px;
+	    margin: 17px 0;
+	}
+
+	/*------------------------------*/
+
+	.footer > .row {
+		padding: 10px 2%;
+	}
+
+	.footer .col {
+	    width: 100%;
+	    text-align: center;
+	    padding: 3px 0;
+	}
+
+	.footer p {
+		padding: 5px 0;
+	}
+
+	.footer .social-col {
+		display: block;
+	}
+
+}
 
 
 @media only screen and (max-width: 480px) {
 
+	h1 {
+	    font-size: 58px;
+	    line-height: 94px;
+	}
 
+	h1 .small {
+	    font-size: 37px;
+	    line-height: 60px;
+	}
+
+	.center-block h2 {
+	    font-size: 17px;
+	    line-height: 20px;
+	}
+
+	.blue-btn {
+	    margin: 10px 0;
+	}
+
+	/*-----------------*/
+
+	.services-thumbnails .thumbnail {
+	    width: 50%;
+	}
+
+	/*-----------------*/
+
+	.gallery-slider {
+	    height: 250px;
+	}
+
+	.gallery-slider .slide {
+	    height: 250px;
+	}
+
+	.gallery-slider .slide .img-box {
+	    height: 250px;
+	    border: 10px solid #ffffff;
+	}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+	.table-header-box.fixed_position {
+		position: relative !important;
+		top: 0 !important;
+	}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+	.header .top-row {
+		min-height: auto;
+	}
+
+	.header .main-nav {
+		height: auto !important;
+	}
 
 }
