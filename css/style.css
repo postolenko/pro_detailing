@@ -1286,6 +1286,7 @@ h1 .small {
 .services-thumbnails .thumbnail .front {
    background: rgba(255, 255, 255, 1);
     z-index: 2;
+    border: 1px solid #ffffff;
 }
 
 /*.services-thumbnails .thumbnail .front p {
@@ -1293,9 +1294,8 @@ h1 .small {
 }*/
 
 .services-thumbnails .thumbnail .back {
-   width: 98%;
-   height: 98%;
    background: rgba(51, 102, 255, 1);
+   border: 1px solid #3366ff;
 }
 
 .services-thumbnails .thumbnail .img-box {
