@@ -130,11 +130,6 @@
 	    padding: 5px 0;
 	}
 
-	.center-block h2 {
-	    font-size: 27px;
-	    line-height: 25px;
-	}
-
 	/*-------------*/
 
 	.header {
@@ -269,6 +264,18 @@
 	}
 
 	/*----------------------*/
+
+	.h-box {
+	    margin: -10px 0 0 0;
+	}
+
+	.center-block h2 {
+	    font-size: 27px;
+	    line-height: 25px;
+	}
+
+	/*----------------------*/
+
 	.table .cell {
 	    padding: 4px 1%;
 	}
