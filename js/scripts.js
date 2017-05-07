@@ -119,7 +119,7 @@ $(document).ready(function() {
 
 	$(function() {
 
-		$(".respmenubtn").click(function() {
+		$(".resp-btn-box").click(function() {
 
 			if( $(".main-nav").is(":hidden") ) {
 
@@ -143,7 +143,7 @@ $(document).ready(function() {
 	        if (eventObject.which == 27) {
 	            
 	            $(".main-nav").fadeOut(500);
-	            $(".respmenubtn").removeClass("active");
+	            $(".resp-btn-box").removeClass("active");
 
 	         }
         });
