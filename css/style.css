@@ -3118,6 +3118,7 @@ h2.top-index {
     display: block;
     width: 100%;
     height: 350px;
+    border: none;
 }
 
 .inner-table {

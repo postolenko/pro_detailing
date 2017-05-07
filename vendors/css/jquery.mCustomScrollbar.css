@@ -1269,6 +1269,7 @@ yx-axis
 
 @media only screen and (min-width: 768px) {
 	.mCSB_scrollTools {
-	    display: none !important;
+	    opacity: 0 !important;
+	    right: -7px;
 	}
 }
