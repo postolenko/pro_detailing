@@ -115,11 +115,38 @@ $(document).ready(function() {
 
 	});
 
+	// --------------------------------------------------------------
+
+    // $(function() {
+
+    //     $(".main-nav > ul > li > a").bind({
+    //       mouseenter: function() {
+
+    //         $(this).parent("li").addClass("active-menu");
+
+    //         $(".active-menu .inner-menu").css({
+    //             "min-width" : $(".header .row").width() + "px",
+    //             "top" : $(this).height() + parseInt( $(this).css("padding-bottom") ) + "px"
+    //         });
+
+    //         $(".active-menu .inner-menu").offset({left : $(".main-nav").offset().left });
+
+    //       },
+    //       mouseleave: function() {
+           
+    //         $(this).parent("li").removeClass("active-menu");
+
+    //       }
+
+    //     });
+
+    //  });
+
 	// ------------------------------------
 
-	// $(".thumbnail.service").ontouchstart(function() {
-	// 	this.classList.toggle('hover');
-	// }
+	$(".thumbnail.service").ontouchstart(function() {
+		this.classList.toggle('hover');
+	}
 
 	// ------------------------------------
 
