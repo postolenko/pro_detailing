@@ -1260,9 +1260,9 @@ h1 .small {
     position: relative;
 }
 
-.services-thumbnails .thumbnail.z_index_position {
+/*.services-thumbnails .thumbnail.z_index_position {
     z-index: 2;
-}
+}*/
 
 .services-thumbnails .thumbnail .front,
 .services-thumbnails .thumbnail .back {
@@ -1284,8 +1284,8 @@ h1 .small {
 
 .services-thumbnails .thumbnail .front {
    /*background: rgba(255, 255, 255, 1);*/
-   z-index: 2;
-   /*border: 1px solid #ffffff;*/
+    /*z-index: 2;*/
+    /*border: 1px solid #ffffff;*/
 }
 
 /*.services-thumbnails .thumbnail .front p {
@@ -1295,6 +1295,8 @@ h1 .small {
 .services-thumbnails .thumbnail .back {
    background: rgba(51, 102, 255, 1);
    /*border: 1px solid #3366ff;*/
+   border: 1px solid #cdcdcd;
+   z-index: 2;
 }
 
 .services-thumbnails .thumbnail .img-box {
@@ -1338,9 +1340,8 @@ h1 .small {
     z-index: 2 !important;
 }
 
-/*.service:hover .inner*/
-/*.service.hover .inner*/ 
-.service:hover .inner {
+.service:hover .inner,
+.service.hover .inner {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
@@ -1352,7 +1353,6 @@ h1 .small {
     -moz-transition: .6s;
     -o-transition: .6s;
     transition: .6s;
-    background: rgba(255, 255, 255, 1);
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
@@ -1403,7 +1403,7 @@ h1 .small {
 }
 
 .service .front {
-    z-index: 2;
+    /*z-index: 2;*/
 }
 
 .service .back {
@@ -1413,7 +1413,9 @@ h1 .small {
     transform: rotateY(180deg);
 }
 
-.service:hover .inner {
+.service:hover .inner,
+.service.hover .inner,
+.service.flip .flipper {
     -webkit-transform: transform: rotateY(180deg);
     -moz-transform: transform: rotateY(180deg);
     -o-transform: transform: rotateY(180deg);
@@ -1432,18 +1434,18 @@ h1 .small {
     margin: 0 0 30px 0;
 }
 
-.tables {
+/*.tables {
    margin: 7px 0 0 0;
-}
+}*/
 
 .table-h {
    border-bottom: 1px solid #efefef;
-   padding: 62px 0 24px 0 !important;
+   padding: 62px 0 27px 0 !important;
 }
 
 .table-h:nth-child(1) {
    border-bottom: none;
-   padding: 35px 0 0 0 !important;
+   padding: 35px 0 8px 0 !important;
 }
 
 .tables h3 {
