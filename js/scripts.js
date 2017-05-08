@@ -122,12 +122,12 @@ $(document).ready(function() {
         $(".thumbnail.service").bind({
           mouseenter: function() {
 
-            this.classList.toggle('hover');
+            $(this).toggleClass('hover');
 
           },
           mouseleave: function() {
            
-            this.classList.toggle('hover');
+            $(this).toggleClass('hover');
 
           }
 
