@@ -117,23 +117,23 @@ $(document).ready(function() {
 
 	// --------------------------------------------------------------
 
-    // $(function() {
+    $(function() {
 
-    //     $(".thumbnail.service").bind({
-    //       mouseenter: function() {
+        $(".thumbnail.service").bind({
+          mouseenter: function() {
 
-    //         $(this).toggleClass('hover');
+            $(this).toggleClass('hover');
 
-    //       },
-    //       mouseleave: function() {
+          },
+          mouseleave: function() {
            
-    //         $(this).toggleClass('hover');
+            $(this).toggleClass('hover');
 
-    //       }
+          }
 
-    //     });
+        });
 
-    //  });
+     });
 
 	// ------------------------------------
 
