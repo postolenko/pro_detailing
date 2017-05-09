@@ -364,17 +364,25 @@
 	}
 
 	.service.flip .flipper {
-	    -webkit-transform: transform: rotateY(0deg);
+	  /*  -webkit-transform: transform: rotateY(0deg);
 	    -moz-transform: transform: rotateY(0deg);
 	    -o-transform: transform: rotateY(0deg);
-	    transform: transform: rotateY(0deg);
+	    transform: transform: rotateY(0deg);*/
+	    -webkit-transform: transform: rotateY(180deg);
+	    -moz-transform: transform: rotateY(180deg);
+	    -o-transform: transform: rotateY(180deg);
+	    transform: transform: rotateY(180deg);
 	}
 
 	.service:hover .inner {
-	    -webkit-transform: rotateY(0deg);
+	 /*   -webkit-transform: rotateY(0deg);
 	    -moz-transform: rotateY(0deg);
 	    -o-transform: rotateY(0deg);
-	    transform: rotateY(0deg);
+	    transform: rotateY(0deg);*/
+		-webkit-transform: transform: rotateY(180deg);
+	    -moz-transform: transform: rotateY(180deg);
+	    -o-transform: transform: rotateY(180deg);
+	    transform: transform: rotateY(180deg);
 	}
 
 	.service:hover .front,
