@@ -1454,13 +1454,6 @@ h1 .small {
     transition-timing-function: ease;
 }
 
-/*.service.mobile.flip .flipper {
-    -webkit-transform: transform: rotateY(0deg);
-    -moz-transform: transform: rotateY(0deg);
-    -o-transform: transform: rotateY(0deg);
-    transform: transform: rotateY(0deg);
-}*/
-
 .service.mobile:hover .inner {
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
@@ -1515,10 +1508,6 @@ h1 .small {
 .tables-box {
     margin: 0 0 30px 0;
 }
-
-/*.tables {
-   margin: 7px 0 0 0;
-}*/
 
 .table-h {
    border-bottom: 1px solid #efefef;
