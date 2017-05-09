@@ -364,39 +364,39 @@
 	}
 
 	.service.flip .flipper {
-	  /*  -webkit-transform: transform: rotateY(0deg);
+	    -webkit-transform: transform: rotateY(0deg);
 	    -moz-transform: transform: rotateY(0deg);
 	    -o-transform: transform: rotateY(0deg);
-	    transform: transform: rotateY(0deg);*/
-	    -webkit-transform: transform: rotateY(180deg);
+	    transform: transform: rotateY(0deg);
+/*	    -webkit-transform: transform: rotateY(180deg);
 	    -moz-transform: transform: rotateY(180deg);
 	    -o-transform: transform: rotateY(180deg);
-	    transform: transform: rotateY(180deg);
+	    transform: transform: rotateY(180deg);*/
 	}
 
 	.service:hover .inner {
-	 /*   -webkit-transform: rotateY(0deg);
+	    -webkit-transform: rotateY(0deg);
 	    -moz-transform: rotateY(0deg);
 	    -o-transform: rotateY(0deg);
-	    transform: rotateY(0deg);*/
-		-webkit-transform: transform: rotateY(180deg);
+	    transform: rotateY(0deg);
+/*		-webkit-transform: transform: rotateY(180deg);
 	    -moz-transform: transform: rotateY(180deg);
 	    -o-transform: transform: rotateY(180deg);
-	    transform: transform: rotateY(180deg);
+	    transform: transform: rotateY(180deg);*/
 	}
 
 	.service:hover .front,
-	.service.hover .front,
+	/*.service.hover .front,*/
 	.service.flip .front {
-		opacity: 0;
-		/*opacity: 1;*/
+		/*opacity: 0;*/
+		opacity: 1;
 	}
 
 	.service:hover .back,
-	.service.hover .back,
+	/*.service.hover .back,*/
 	.service.flip .back {
-		opacity: 1;
-		/*opacity: 0;*/
+		/*opacity: 1;*/
+		opacity: 0;
 	}
 
 	.service:active .front {
