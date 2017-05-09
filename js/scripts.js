@@ -137,23 +137,24 @@ $(document).ready(function() {
 
 	// ------------------------------------
 
-	$(".thumbnail.service").mouseenter(function(serviceEvent) {
+	// $(".thumbnail.service").mouseenter(function(serviceEvent) {
 
-		console.log(serviceEvent);
-		// this.classList.toggle('hover');
-		$(this).css({
-			"background" : "red"
-		});
-	});
+	// 	console.log(serviceEvent);
+	// 	// this.classList.toggle('hover');
+	// 	$(this).css({
+	// 		"background" : "red"
+	// 	});
+	// });
 
-	$(".thumbnail.service").mouseleave(function(serviceEvent) {
+	// $(".thumbnail.service").mouseleave(function(serviceEvent) {
 
-		console.log(serviceEvent);
-		// this.classList.toggle('hover');
-		$(this).css({
-			"background" : "pink"
-		});
-	});
+	// 	console.log(serviceEvent);
+	// 	// this.classList.toggle('hover');
+	// 	$(this).css({
+	// 		"background" : "pink"
+	// 	});
+	
+	// });
 
 	// ------------------------------------
 
