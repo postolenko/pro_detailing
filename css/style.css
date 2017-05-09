@@ -1391,8 +1391,7 @@ h1 .small {
 }
 
 .service:hover .inner,
-.service.hover .inner,
-.service.flip .flipper {
+.service.hover .inner {
     -webkit-transform: transform: rotateY(180deg);
     -moz-transform: transform: rotateY(180deg);
     -o-transform: transform: rotateY(180deg);
@@ -1455,12 +1454,12 @@ h1 .small {
     transition-timing-function: ease;
 }
 
-.service.mobile.flip .flipper {
+/*.service.mobile.flip .flipper {
     -webkit-transform: transform: rotateY(0deg);
     -moz-transform: transform: rotateY(0deg);
     -o-transform: transform: rotateY(0deg);
     transform: transform: rotateY(0deg);
-}
+}*/
 
 .service.mobile:hover .inner {
     -webkit-transform: rotateY(0deg);
