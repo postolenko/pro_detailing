@@ -171,6 +171,10 @@
 	    padding: 45px 0 20px 0;
 	}
 
+	section:nth-child(1) {
+	    padding: 55px 0 45px 0;
+	}
+
 	h1 {
 	    font-size: 84px;
 	    line-height: 114px;
@@ -479,6 +483,10 @@
 
 
 @media only screen and (max-width: 480px) {
+
+	section:nth-child(1) {
+	    padding: 45px 0;
+	}
 
 	h1 {
 	    font-size: 58px;
