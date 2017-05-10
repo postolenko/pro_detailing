@@ -8,6 +8,7 @@ $(document).ready(function() {
 
     // -----------------------------------------------
 
+    var tablesBoxIndex;
 	var topCoorTableHeader;
 	var coorTop;
 	var coorBottom;
@@ -18,11 +19,11 @@ $(document).ready(function() {
 	var ornamentWidth;
 	var HCellWidth;
 
-	// ----------------------
-
-	getTableHeaderPosition();
+	// ----------------------	
 
 	getHeaderStyle();
+
+	getTableHeaderPosition();
 
 	// ---------------------------------------
 
@@ -50,14 +51,13 @@ $(document).ready(function() {
 
     	getRespMainNavHeight();
 
-
     });
 
-    $(document).scroll( function() {
-
-    	getTableHeaderPosition();
+    $(document).scroll( function() {    	
 
     	getHeaderStyle();
+
+    	getTableHeaderPosition();
 
     });
 
@@ -186,6 +186,7 @@ $(document).ready(function() {
 
     		$(".header").addClass("main-page-header");
 
+
     	} else {
 
     		$(".header").removeClass("main-page-header");
@@ -200,38 +201,50 @@ $(document).ready(function() {
 
 		if( $(".tables-box").length > 0 && bodyWidth > 1024) {
 
-			topCoorTableHeader = $(window).scrollTop() + $(".header").height();
+			for(tablesBoxIndex = 0; tablesBoxIndex <= $(".tables-box").length - 1; tablesBoxIndex++ ) {
 
-			coorTop = $(".tables-box").offset().top;
+				topCoorTableHeader = $(window).scrollTop() + $(".header").height();
 
-			coorBottom = $(".tables-box").offset().top + $(".tables-box").height();
+				coorTop = $(".tables-box:eq("+ tablesBoxIndex +")").offset().top;
 
-			if(topCoorTableHeader >= coorTop && topCoorTableHeader <= coorBottom ) {
+				coorBottom = $(".tables-box:eq("+ tablesBoxIndex +")").offset().top + $(".tables-box:eq("+ tablesBoxIndex +")").height();
 
-				if( $(".table-header-box").hasClass("fixed_position") ) {
+				if(topCoorTableHeader >= coorTop && topCoorTableHeader <= coorBottom ) {
 
-					return true;
+					if( $(".tables-box:eq("+ tablesBoxIndex +") .table-header-box").hasClass("fixed_position") ) {
+
+						return true;
+
+					} else {
+
+						$(".tables-box:eq("+ tablesBoxIndex +") .table-header-box").addClass("fixed_position");
+
+						setTimeout(function() {
+
+							$(".tables-box:eq("+ tablesBoxIndex +") .table-header-box").animate({"top" : $(".header").height() + "px"}, 350);
+						
+							$(".header").addClass("no_shadow");
+
+						}, 440);
+
+						$(".tables-box:eq("+ tablesBoxIndex +") .table-header-box + .row").css({"margin-top" : $(".tables-box:eq("+ tablesBoxIndex +") .table-header-box").height() + "px"});
+
+					}
 
 				} else {
 
-					$(".table-header-box").addClass("fixed_position");
+					if( $(".tables-box:eq("+ tablesBoxIndex +") .table-header-box").hasClass("fixed_position") ) {
 
-					$(".table-header-box").css({"top" : $(".header").height() + "px"});
+						$(".tables-box:eq("+ tablesBoxIndex +") .table-header-box").removeClass("fixed_position");
 
-					$(".table-header-box + .row").css({"margin-top" : $(".table-header-box").height() + "px"});
+						$(".tables-box:eq("+ tablesBoxIndex +") .table-header-box").css({"top" : 0 + "px"});
 
+						$(".header").removeClass("no_shadow");
+
+						$(".tables-box:eq("+ tablesBoxIndex +") .table-header-box + .row").css({"margin-top" : 0 + "px"});
+					}
 				}
 
-			} else {
-
-				if( $(".table-header-box").hasClass("fixed_position") ) {
-
-					$(".table-header-box").removeClass("fixed_position");
-
-					$(".table-header-box").css({"top" : 0 + "px"});
-
-					$(".table-header-box + .row").css({"margin-top" : 0 + "px"});
-				}
 			}
 
 		}

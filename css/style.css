@@ -174,7 +174,12 @@ textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s e
 
 section {
     position: relative;
-    padding: 90px 0 45px 0;
+    padding: 100px 0 45px 0;
+}
+
+section:nth-child(1) {
+    position: relative;
+    padding: 130px 0 45px 0;
 }
 
 h1 {
@@ -953,6 +958,10 @@ header {
     background: -webkit-linear-gradient(left, rgba(101,96,80,1) 0%,rgba(81,78,67,1) 36%,rgba(68,65,58,1) 53%,rgba(49,48,46,1) 71%,rgba(35,35,37,1) 100%);
     background: linear-gradient(to right, rgba(101,96,80,1) 0%,rgba(81,78,67,1) 36%,rgba(68,65,58,1) 53%,rgba(49,48,46,1) 71%,rgba(35,35,37,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#656050', endColorstr='#232325',GradientType=1 );
+}
+
+.header.no_shadow .main-nav:after {
+    box-shadow: none;
 }
 
 .header.main-page-header .logo-block {

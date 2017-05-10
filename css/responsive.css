@@ -46,6 +46,17 @@
 		width: 900px;
 	}
 
+	.table-header-box.fixed_position {
+		position: relative !important;
+		top: 0 !important;
+		box-shadow: none;
+		z-index: 2;
+	}
+
+	.table-header-box + .row {
+		margin-top: 0 !important;
+	}
+
 	.tables .scroll-horizontal .row {
 		width: 900px;
 	}
@@ -557,15 +568,6 @@
 	.tel-link {
 	    font-size: 14px;
 	    line-height: 14px;
-	}
-
-}
-
-@media only screen and (min-width: 1024px) {
-
-	.table-header-box.fixed_position {
-		position: relative !important;
-		top: 0 !important;
 	}
 
 }
