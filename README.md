@@ -6,3 +6,4 @@
 # http://postolenko.github.io/pro_detailing/gallery.html
 # http://postolenko.github.io/pro_detailing/contacts.html
 # http://postolenko.github.io/pro_detailing/category.html
+# http://postolenko.github.io/pro_detailing/category_2.html
