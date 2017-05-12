@@ -476,6 +476,16 @@
 		color: #b9ab7d;
 	}
 
+	/*-------------------------------*/
+
+	.slide-photos .video-slide {
+	    height: 520px;
+	}
+
+	.slide-photos .video-slide iframe {
+	    height: 500px;
+	}
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -502,6 +512,16 @@
 	    font-size: 31px;
 	    line-height: 32px;
 	    margin: 17px 0;
+	}
+
+	/*-------------------------------*/
+
+	.slide-photos .video-slide {
+	    height: 260px;
+	}
+
+	.slide-photos .video-slide iframe {
+	    height: 240px;
 	}
 
 	/*------------------------------*/
