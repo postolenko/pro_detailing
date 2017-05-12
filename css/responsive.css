@@ -161,10 +161,6 @@
 	    padding: 0;
 	}
 
-/*	.two-cols-templ .gallery-slider {
-	    margin: 29px auto;
-	}*/
-
 }
 
 @media only screen and (max-width: 900px) {
@@ -628,7 +624,6 @@
 
 	.portfolio-slider .photos-block {
 		margin-top: 20px;
-	    /*left: -27%;*/
 	    left: 3%;
 	}
 
@@ -650,7 +645,6 @@
 	}
 
 	.portfolio-slider .photos-block:hover .photo-2 {
-	    /*top: 136px;*/
 	    top: 256px;
 	    left: initial;
 	    right: 1%;

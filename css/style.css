@@ -404,7 +404,6 @@ a:active {
     width: 100%;
 }
 
-
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
@@ -1129,24 +1128,12 @@ header {
     background: #f5de89;
 }
 
-/*.respmenubtn:hover span {
-    border: 1px solid #f5de89;
-    background: #f5de89;
-}*/
-
 .resp-btn-box.active .respmenubtn span {
     position: relative;
     top: -1px;
     border: 1px solid #f5de89;
     background: #f5de89;
 }
-
-/*.respmenubtn.active span {
-    position: relative;
-    top: -1px;
-    border: 1px solid #f5de89;
-    background: #f5de89;
-}*/
 
 .resp-btn-box.active .respmenubtn span:last-child {
     display: none;
@@ -1863,8 +1850,6 @@ h1 .small {
 }
 
 .photos-block {
-    /*width: 100%;*/
-    /*max-width: 553px;*/
     width: 500px;
     height: 360px;
     background: rgba(0, 0, 0, 0);
@@ -1894,7 +1879,6 @@ h1 .small {
 
 .photos-block:hover {
     width: 200%;
-    /*max-width: 200%;*/
     height: 437px;
     padding: 20px;
     position: absolute;
@@ -2403,12 +2387,6 @@ h1 .small {
     left: 0;
     z-index: 4;
 }
-
-/*.gallery-pagination {
-    position: absolute;
-    bottom: 25px;
-    left: 0;
-}*/
 
 .gallery-pagination.bottom_pagination {
     position: absolute;
@@ -3364,10 +3342,6 @@ h2.top-index {
     z-index: 2;
 }
 
-.two-cols-templ {
-
-}
-
 .two-cols-templ .ornament-h {
     padding: 10px 0 30px 0;
 }
@@ -3397,10 +3371,6 @@ h2.top-index {
     border: none;
 }
 
-.gallery-pagination.top_pagination {
-
-}
-
 .gallery-pagination-content.dark_theme p {
     color: #232325;
 }
@@ -3426,10 +3396,6 @@ h2.top-index {
     font-weight: normal;
     color: #232325;
     padding: 0;
-}
-
-.portfolio-slider {
-
 }
 
 .append-arrows-portfolio-slider {
@@ -3487,7 +3453,6 @@ h2.top-index {
     position: relative;
     top: initial;
     bottom: 68px;
-    /*right: 0;*/
     left: 5%;
     padding: 20px 5px;
 
@@ -3520,14 +3485,11 @@ h2.top-index {
 
 .portfolio-slider .photo-1 {
     top: 68px;
-    /*left: 4%;*/
     left: 0%;
 }
 
 .portfolio-slider .photo-2 {
     top: 64px;
-    /*right: 36%;*/
-    /*right: 19%;*/
     right: 6%;
 }
 

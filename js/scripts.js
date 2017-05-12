@@ -22,6 +22,11 @@ $(document).ready(function() {
 
 	// ----------------------
 
+	var indePortfolioSlider;
+	var porfolioSlidesCoun;
+
+	// ----------------------
+
 	var contentSectionsCount;
 
 	// ----------------------
@@ -125,8 +130,8 @@ $(document).ready(function() {
 
 		$(".portfolio-slider-box").each(function() {
 
-			var indePortfolioSlider = $(this).index(".portfolio-slider-box");
-			var porfolioSlidesCount = $(".portfolio-slider:eq("+ indePortfolioSlider +") .slide").length;
+			indePortfolioSlider = $(this).index(".portfolio-slider-box");
+			porfolioSlidesCount = $(".portfolio-slider:eq("+ indePortfolioSlider +") .slide").length;
 
 			$(".portfolio-slider-box:eq("+ indePortfolioSlider +") .count-slides").text(porfolioSlidesCount);
 
