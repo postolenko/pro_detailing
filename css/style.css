@@ -3409,10 +3409,16 @@ h2.top-index {
     color: #003bea;
 }
 
+.slide-info.light_theme h3,
+.slide-info.light_theme p,
+.slide-info.light_theme .count-photo {
+    color: #232325;
+}
+
 .slide-info h3,
 .slide-info p,
 .slide-info .count-photo {
-    color: #232325;
+    color: #ffffff;
 }
 
 .slide-info .publick-date {
