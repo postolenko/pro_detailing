@@ -48,6 +48,8 @@ $(document).ready(function() {
 
 				getStyleParameters(sliderName);
 
+				getSlideInfo(sliderName);
+
 				$("[data-slider-name = '" + sliderName + "'] .gallery-pagination-content .count-slides").text(countSlides);
 
 			});

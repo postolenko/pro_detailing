@@ -1853,7 +1853,9 @@ h1 .small {
 }
 
 .photos-block {
-    width: 100%;
+    /*width: 100%;*/
+    /*max-width: 553px;*/
+    width: 500px;
     height: 360px;
     background: rgba(0, 0, 0, 0);
     position: absolute;
@@ -1882,6 +1884,7 @@ h1 .small {
 
 .photos-block:hover {
     width: 200%;
+    /*max-width: 200%;*/
     height: 437px;
     padding: 20px;
     position: absolute;
@@ -3254,7 +3257,7 @@ h2.top-index {
 }
 
 .inner-table .blue-btn {
-   margin: 38px 0;
+   margin: 38px 0 10px 0;
 }
 
 /*-- /Category Page Section - 1 --*/
@@ -3308,6 +3311,10 @@ h2.top-index {
 
 .two-cols-templ {
 
+}
+
+.two-cols-templ .ornament-h {
+    padding: 10px 0 30px 0;
 }
 
 .two-cols-templ .left {
@@ -3422,25 +3429,51 @@ h2.top-index {
 }
 
 .portfolio-slider .photos-block {
+    position: relative;
     top: initial;
     bottom: 68px;
-    right: 0;
+    /*right: 0;*/
+    left: 5%;
     padding: 20px 5px;
+
+   -webkit-transition-property: width, left;
+   -webkit-transition-duration: .7s;
+   -webkit-transition-timing-function: ease;
+
+   -moz-transition-property: width, left;
+   -moz-transition-duration: .7s;
+   -moz-transition-timing-function: ease;
+
+   -ms-transition-property: width, left;
+   -ms-transition-duration: .7s;
+   -ms-transition-timing-function: ease;
+
+   -o-transition-property: width, left;
+   -o-transition-duration: .7s;
+   -o-transition-timing-function: ease;
+
+   transition-property: width, left;
+   transition-duration: .7s;
+   transition-timing-function: ease;
 }
+
 
 .portfolio-slider .photos-block:hover {
     width: 100%;
+    left: 0%;
 }
 
 .portfolio-slider .photo-1 {
     top: 68px;
-    left: 4%;
+    /*left: 4%;*/
+    left: 0%;
 }
 
 .portfolio-slider .photo-2 {
     top: 64px;
     /*right: 36%;*/
-    right: 19%;
+    /*right: 19%;*/
+    right: 6%;
 }
 
 .portfolio-slider .photos-block:hover .photo-1 {
@@ -3450,7 +3483,7 @@ h2.top-index {
 
 .portfolio-slider .photos-block:hover .photo-2 {
     top: 47px;
-/*    left: initial;*/
+    left: initial;
     right: 1%;
 }
 
@@ -3462,7 +3495,13 @@ h2.top-index {
     z-index: 3;
 }
 
+.portfolio-slider {
+    margin-top: 19px; 
+}
 
+.make-order-btn-box {
+    padding: 56px 0 30px 0;
+}
 
 /*-- /Category_2 Page --*/
 

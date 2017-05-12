@@ -113,6 +113,21 @@ $(document).ready(function() {
 
 	$(function() {
 
+		$(".portfolio-slider-box").each(function() {
+
+			var indePortfolioSlider = $(this).index(".portfolio-slider-box");
+			var porfolioSlidesCount = $(".portfolio-slider:eq("+ indePortfolioSlider +") .slide").length;
+
+			$(".portfolio-slider-box:eq("+ indePortfolioSlider +") .count-slides").text(porfolioSlidesCount);
+
+		});
+
+	});
+
+	// ------------------------------------
+
+	$(function() {
+
 		$(".resp-btn-box").click(function() {
 
 			if( $(".main-nav").is(":hidden") ) {
