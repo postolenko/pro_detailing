@@ -1,9 +1,5 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 
-/*	.services-thumbnails .thumbnail {
-		width: 25%;
-	}*/
-
 	.service .front {
 		opacity: 1;
 		-webkit-transform: none;
@@ -116,6 +112,10 @@
 	.append-arrows .slick-arrow span {
 	    position: relative;
 	    top: -2px;
+	}
+
+	.portfolio-slider .photos-block {
+		top: -71px;
 	}
 
 }
