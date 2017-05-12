@@ -286,21 +286,9 @@ $(document).ready(function() {
 
 			$(".content > section").css({"min-height" : bodyHeight - $(".footer").height() + "px"});
 
-			// console.log( $(".content > section").css("background"));
-
-			// if( $(".content > section").css("background") ) {
-
-			// 	$(".footer").css({
-			// 		"background" : "rgba(255, 255, 255, 1)"
-			// 	});
-
-			// } else {
-
-				$(".footer").css({
-					"background" : $(".content > section").css("background")
-				});
-
-			// }			
+			$(".footer").css({
+				"background" : $(".content > section").css("background")
+			});
 
 		}
 
