@@ -27,6 +27,7 @@ $(document).ready(function() {
 
 		var sliderName;
 		var controlsParent;
+		var srcAttrVideo;
 
 		// ----------------------------------
 
@@ -102,12 +103,22 @@ $(document).ready(function() {
 		$(".gallery-slide-photos-bg, .close-gallery-slide-btn").click(function() {
 			$(".gallery-slide-photos").fadeOut(300);
 			$(".gallery-slide-photos .slide-photos[data-slide-index = '"+ indexSlideAttr +"']").fadeOut(300);
+
+			srcAttrVideo = $(".video-slide iframe").attr("src");
+
+            $(".video-slide iframe").attr("src", srcAttrVideo + "?enablejsapi=1");
+
+            document.getElementById('video').contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+
+            $(".video-slide iframe").attr("src", srcAttrVideo);
+
 		});
 
         $(this).keydown(function(eventObject){
             if (eventObject.which == 27) {                
             	$(".gallery-slide-photos").fadeOut(300);
 				$(".gallery-slide-photos .slide-photos[data-slide-index = '"+ indexSlideAttr +"']").fadeOut(300);
+
              }
         });
 
