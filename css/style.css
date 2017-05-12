@@ -1143,6 +1143,7 @@ header {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     margin: 3px 0 0 0;
     position: relative;
@@ -1153,6 +1154,7 @@ header {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
@@ -1335,6 +1337,7 @@ h1 .small {
 .service.hover .inner {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
@@ -1343,10 +1346,12 @@ h1 .small {
     -webkit-transition: .6s;
     -moz-transition: .6s;
     -o-transition: .6s;
+    -ms-transition: .6s;
     transition: .6s;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
     position: relative;
 }
@@ -1396,6 +1401,7 @@ h1 .small {
 .service .back {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
@@ -1404,6 +1410,7 @@ h1 .small {
 .service.hover .inner {
     -webkit-transform: transform: rotateY(180deg);
     -moz-transform: transform: rotateY(180deg);
+    -ms-transform: transform: rotateY(180deg);
     -o-transform: transform: rotateY(180deg);
     transform: transform: rotateY(180deg);
 }
@@ -1412,6 +1419,7 @@ h1 .small {
     opacity: 1;
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
     -o-transform: rotateY(0deg);
     transform: rotateY(0deg);
 
@@ -1440,6 +1448,7 @@ h1 .small {
     opacity: 0;
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
     -o-transform: rotateY(0deg);
     transform: rotateY(0deg);
     
@@ -1467,6 +1476,7 @@ h1 .small {
 .service.mobile:hover .inner {
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
     -o-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
@@ -1940,8 +1950,9 @@ h1 .small {
     left: 4%;
     -webkit-transform: scale(.78) rotate(-22deg);
     -moz-transform: scale(.78) rotate(-22deg);
+    -ms-transform: scale(.78) rotate(-22deg);
     -o-transform: scale(.78) rotate(-22deg);
-    -webkit-transform: scale(.78) rotate(-22deg);
+    transform: scale(.78) rotate(-22deg);
 
     -webkit-transition-property: top, left, transform;
     -webkit-transition-duration: .7s;
@@ -1994,6 +2005,7 @@ h1 .small {
     left: 4%;
     -webkit-transform: scale(1) rotate(0deg);
     -moz-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
     -o-transform: scale(1) rotate(0deg);
     -webkit-transform: scale(1) rotate(0deg);
 }
@@ -2039,8 +2051,9 @@ h1 .small {
 .photo:hover .img-box img {
     -webkit-transform: scale(1.07);
     -moz-transform: scale(1.07);
+    -ms-transform: scale(1.07);
     -o-transform: scale(1.07);
-    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
 }
 
 .photo p {
@@ -2358,6 +2371,10 @@ h1 .small {
 .gallery-slider .slide {
     cursor: pointer;
     left: 0;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
     transform: scale(1);
     background: rgba(35, 35, 37, 1);
 
@@ -2383,6 +2400,10 @@ h1 .small {
 }
 
 .gallery-slider .slide:nth-child(1) {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
     transform: scale(1);
     left: 0;
     z-index: 4;
@@ -2639,6 +2660,10 @@ h1 .small {
 }
 
 .photos-thumbnails .miniature:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
     transform: scale(1.05);
 }
 
@@ -3110,6 +3135,7 @@ h2.top-index {
 .article-img-box:hover img {
    -webkit-transform: scale(1.1);
    -moz-transform: scale(1.1);
+   -ms-transform: scale(1.1);
    -o-transform: scale(1.1);
    transform: scale(1.1);
 }
