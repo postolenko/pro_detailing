@@ -461,6 +461,21 @@
 		min-width: 660px;
 	}
 
+	/*------------------------------*/
+
+	.category-sect {
+	    height: 80vh;
+	    max-height: 440px;
+	}
+
+	.category-sect .row {
+	    margin-top: 40px;
+	}
+
+	.category-sect .row h2 {
+		color: #b9ab7d;
+	}
+
 }
 
 @media only screen and (max-width: 600px) {

@@ -5,6 +5,7 @@ $(document).ready(function() {
     e = d.documentElement,
     g = d.getElementsByTagName('body')[0],
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+    bodyHeight = w.innerHeight || e.clientHeight || g.clientHeight;
 
     // -----------------------------------------------
 
@@ -19,11 +20,17 @@ $(document).ready(function() {
 	var ornamentWidth;
 	var HCellWidth;
 
-	// ----------------------	
+	// ----------------------
+
+	var contentSectionsCount;
+
+	// ----------------------
 
 	getHeaderStyle();
 
 	getTableHeaderPosition();
+
+	getSectionAnsFooterParameters();
 
 	// ---------------------------------------
 
@@ -44,12 +51,15 @@ $(document).ready(function() {
     	// --------------------------------------------------------------
 
     	bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+    	bodyHeight = w.innerHeight || e.clientHeight || g.clientHeight;
 
     	// --------------------------------------------------------------
 
     	getOrnamentHWidth();
 
     	getRespMainNavHeight();
+
+    	getSectionAnsFooterParameters();
 
     });
 
@@ -261,6 +271,36 @@ $(document).ready(function() {
 				}
 
 			}
+
+		}
+
+	}
+
+	// ------------------------------------
+
+	function getSectionAnsFooterParameters() {
+
+		contentSectionsCount = $(".content > section").length;
+
+		if(contentSectionsCount <= 1 ) {
+
+			$(".content > section").css({"min-height" : bodyHeight - $(".footer").height() + "px"});
+
+			// console.log( $(".content > section").css("background"));
+
+			// if( $(".content > section").css("background") ) {
+
+			// 	$(".footer").css({
+			// 		"background" : "rgba(255, 255, 255, 1)"
+			// 	});
+
+			// } else {
+
+				$(".footer").css({
+					"background" : $(".content > section").css("background")
+				});
+
+			// }			
 
 		}
 
